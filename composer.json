@@ -1,6 +1,6 @@
 {
-  "name": "underpin/taxonomy-loader",
-  "description": "Taxonomy loader for Underpin",
+  "name": "underpin/template-loader",
+  "description": "Template loader for Underpin. Intended to be used by WordPress themes.",
   "type": "library",
   "license": "GPL-2.0-or-later",
   "authors": [
