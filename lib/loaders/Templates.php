@@ -9,7 +9,7 @@
 namespace Underpin_Templates\Loaders;
 
 use Underpin_Templates\Abstracts\Template;
-use Underpin\Abstracts\Registries\Loader_Registry;
+use Underpin\Abstracts\Registries\Object_Registry;
 use function Underpin\underpin;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since
  * @package
  */
-class Templates extends Loader_Registry {
+class Templates extends Object_Registry {
 
 	/**
 	 * The abstraction class name.
