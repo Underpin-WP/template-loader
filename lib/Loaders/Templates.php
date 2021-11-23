@@ -6,11 +6,11 @@
  * @package
  */
 
-namespace Underpin_Templates\Loaders;
+namespace Underpin\Templates\Loaders;
 
-use Underpin_Templates\Abstracts\Template;
+use Underpin\Loaders\Logger;
+use Underpin\Templates\Abstracts\Template;
 use Underpin\Abstracts\Registries\Object_Registry;
-use function Underpin\underpin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -33,9 +33,9 @@ class Templates extends Object_Registry {
 	 * @since 1.0.0
 	 * @var string The name of the abstract class this service locator uses.
 	 */
-	protected $abstraction_class = 'Underpin_Templates\Abstracts\Template';
+	protected $abstraction_class = 'Underpin\Templates\Abstracts\Template';
 
-	protected $default_factory = 'Underpin_Templates\Factories\Template_Instance';
+	protected $default_factory = 'Underpin\Templates\Factories\Template_Instance';
 
 	protected function set_default_items() {}
 
@@ -66,7 +66,7 @@ class Templates extends Object_Registry {
 
 		// Validate the item didn't return a result.
 		if ( is_wp_error( $item ) ) {
-			underpin()->logger()->log_wp_error( 'error', $item );
+			Logger::log_wp_error( 'error', $item );
 
 			return '';
 		}

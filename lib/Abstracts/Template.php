@@ -6,7 +6,7 @@
  * @package
  */
 
-namespace Underpin_Templates\Abstracts;
+namespace Underpin\Templates\Abstracts;
 
 use Underpin\Traits\Templates;
 use Underpin\Factories\Registry;

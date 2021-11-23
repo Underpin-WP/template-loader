@@ -1,8 +1,8 @@
 <?php
 
-namespace Underpin_Templates\Factories;
+namespace Underpin\Templates\Factories;
 
-use Underpin_Templates\Abstracts\Template;
+use Underpin\Templates\Abstracts\Template;
 use Underpin\Traits\Instance_Setter;
 
 if ( ! defined( 'ABSPATH' ) ) {
